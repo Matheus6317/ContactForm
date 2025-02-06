@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Contact form</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <form id="form">
+    <div class="block01">
+
+      <div class="message">
+        <img src="assets/images/checked.jpg" alt="icon">
+        <div>Message Sent!</div>
+      </div>
+      <p class="p1">Tkanks to completing the form. We'll be in touch soon!</p>
+
+    </div>
+
+    <div class="block02">
+      <h1>Contact Us</h1>
+
+      <div class="name">
+        <div>
+          <span>First Name <b>*</b></span>
+          <input type="text" id="name" class="name01">
+          <p class="error" id="error01"></p>
+        </div>
+        <div>
+          <span>Last Name <b>*</b></span>
+          <input type="text" id="famName" class="name02">
+          <p class="error" id="error02"></p>
+        </div>
+      </div>
+      
+      <div class="please">
+        <span>Email Address <b>*</b></span>
+        <input type="email" class="email" id="email">
+        <p class="error" id="error03"></p>
+      </div>
+      
+      
+      <div class="type">
+        
+        <span>Query type <b>*</b></span>
+        <div class="chose">
+          <div class="firstone">
+            <input type="radio" name="same" id="type01">
+            <label for="type01">General Enquiry</label>
+          </div>
+          <div class="secondone">
+            <input type="radio" name="same" id="type02">
+            <label for="type02">Support Request</label>
+          </div>
+        </div>
+        <p class="error" id="error04"></p>
+        
+      </div>
+      
+      <div class="please">
+        
+        <span>Message <b>*</b></span>
+        <textarea rows="6" id="message" class="mess"></textarea>
+        
+        <p class="error" id="error05"></p>
+      </div>
+
+      <div class="autorize">
+        <input type="checkbox" id="autorize">
+        <label for="autorize">I consent to being contact by the team <b>*</b></label>
+        <p class="error" id="error06"></p>
+      </div>
+
+      <button id="submit">Submit</button>
+
+    </div>
+  </form>
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>.
+    Coded by <a href="#">Matheus</a>.
+  </div>
+  <script src="index.js"></script>
+</body>
+</html>
